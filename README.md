@@ -1,7 +1,5 @@
 # Between Us
-<p>Web platform for encryption using César Encryption.</p>
-
-![](/src/img/00.JPG) 
+<p>Web platform for encryption using soemthint similiar to Caesar encryption.</p>
 
 ## Index
 
@@ -15,6 +13,8 @@
 ***
 
 ## 1. Preamble
+
+![](/src/img/00.JPG) 
 
 Encrypt means to encrypt. The [Caesar Cipher](https://en.wikipedia.org/wiki/Caesar_cipher)
 it is one of the earliest known encryption methods. The Roman Emperor Julius Caesar used it to send secret orders to his generals in the fields of battle.
