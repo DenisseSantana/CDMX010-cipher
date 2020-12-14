@@ -1,5 +1,6 @@
 # Between Us
 <p>Web platform for encryption using César Encryption.</p>
+![](/src/img/00.jpg) 
 
 ## Index
 
@@ -71,14 +72,14 @@ For this reason, the concept "Between Us" was born, a platform that allows to fa
 
 Example:
 
-![](/src/img/Slide to encode.gif)
+![](/src/img/01.gif)
 ### Decode:
 
 ![](/src/img/Slide3.JPG) 
 
 Example:
 
-![](/src/img/Slide to decode.gif)
+![](/src/img/02.gif)
 
 ## 6. Retrospective
 
