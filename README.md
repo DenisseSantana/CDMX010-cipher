@@ -38,14 +38,14 @@ Similar to Ceasar cipher, it works by replacing each letter of the original text
 
 Tis could be use between couples, or firends. That's why it's called "Between Us" it can only be enconded and decoded by the persons envolved.
 
-** Duration: ** 2 weeks.
+**Duration:** 2 weeks.
 
-** Methods: ** 
+**Methods:** 
 
 * Research
 * Desing Thinking
 
-** Tools: ** 
+**Tools:** 
 * HTML
 * CSS
 * Java Script
@@ -57,28 +57,28 @@ For this reason, the concept "Between Us" was born, a platform that allows to fa
 
 ## 4. Process
 
-![](img/0.png) 
+![](scr/img/0.png) 
 
 ## 5. Usability
 
 ### Start:
 
-![](img/Slide1.JPG) 
+![](scr/img/Slide1.JPG) 
 
 ### Encode:
 
-![](img/Slide2.JPG) 
+![](scr/img/Slide2.JPG) 
 
 Example:
 
-![](img/Slide to encode.gif)
+![](scr/img/Slide to encode.gif)
 ### Decode:
 
-![](img/Slide3.JPG) 
+![](scr/img/Slide3.JPG) 
 
 Example:
 
-![](img/Slide to decode.gif)
+![](scr/img/Slide to decode.gif)
 
 ## 6. Retrospective
 
