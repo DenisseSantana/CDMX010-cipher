@@ -57,28 +57,28 @@ For this reason, the concept "Between Us" was born, a platform that allows to fa
 
 ## 4. Process
 
-![](/scr/img/0.png) 
+![](/src/img/0.png) 
 
 ## 5. Usability
 
 ### Start:
 
-![](/scr/img/Slide1.JPG) 
+![](/src/img/Slide1.JPG) 
 
 ### Encode:
 
-![](/scr/img/Slide2.JPG) 
+![](/src/img/Slide2.JPG) 
 
 Example:
 
-![](/scr/img/Slide to encode.gif)
+![](/src/img/Slide to encode.gif)
 ### Decode:
 
-![](/scr/img/Slide3.JPG) 
+![](/src/img/Slide3.JPG) 
 
 Example:
 
-![](/scr/img/Slide to decode.gif)
+![](/src/img/Slide to decode.gif)
 
 ## 6. Retrospective
 
