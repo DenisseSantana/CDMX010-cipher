@@ -1,6 +1,7 @@
 # Between Us
 <p>Web platform for encryption using César Encryption.</p>
-![](/src/img/00.jpg) 
+
+![](/src/img/00.JPG) 
 
 ## Index
 
