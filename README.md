@@ -72,14 +72,14 @@ For this reason, the concept "Between Us" was born, a platform that allows to fa
 
 Example:
 
-![](/src/img/01.gif)
+![](/src/img/02.gif)
 ### Decode:
 
 ![](/src/img/Slide3.JPG) 
 
 Example:
 
-![](/src/img/02.gif)
+![](/src/img/01.gif)
 
 ## 6. Retrospective
 
