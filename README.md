@@ -14,7 +14,7 @@
 
 ## 1. Preamble
 
-![](/src/img/00.JPG) 
+![](/src/img/start.jpg) 
 
 Encrypt means to encrypt. The [Caesar Cipher](https://en.wikipedia.org/wiki/Caesar_cipher)
 it is one of the earliest known encryption methods. The Roman Emperor Julius Caesar used it to send secret orders to his generals in the fields of battle.
