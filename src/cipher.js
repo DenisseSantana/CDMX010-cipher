@@ -1,84 +1,66 @@
 const cipher = {
-  // ...
-//    encode( offset, string)
-//  {
-//     let result = "";
-//     const abc = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
- 
-//     offset = (offset % 26 + 26) % 26;
- 
-//     if (string!=null) {
-//                  //rotación de cadena, si no esta en el array se escribe tal cual
-//                 for (let i = 0; i<string.length; i++){
-//                   if (abc.indexOf(string[i])!=-1){
-//                   let position = ((abc.indexOf(string[i])+offset)%26);
-//                    result += abc[position]
-//                   }
-//                   else
-//                   result += string[i];
-//                   }                
-//                 return result;
-//                 }
-    //  else if (!string) {
-    //   throw new TypeError("Not valid");
-    //  }
-    //  else if (string === 0) {
-    //   throw new TypeError("Not valid");
-    //  }
-    //  else if (string === (null, [])) {
-    //   throw new TypeError("Not valid");
-    //  }
-    //  else if (string === (0,0)) {
-    //   throw new TypeError("Not valid");
-    //  }
-  // },
 
-   encode (offset, string)   
-   {
-    //  if (!string){
-    //               return "";
-    //              }
-    if (!string) {
-      throw new TypeError("Not valid");
-     }
-     else if (string === 0) {
-      throw new TypeError("Not valid");
-     }
-     else if (string === (null, [])) {
-      throw new TypeError("Not valid");
-     }
-     else if (string === (0,0)) {
-      throw new TypeError("Not valid");
-     }
-     const abc = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-     offset = (offset % 26 + 26) % 26;
-     return string.replace(/[A-Z]/ig, e=> abc[(abc.indexOf(e)+offset)%26]);
-   },
- 
-   decode(offset, string){
-    //  if (!string){
-    //      return "";
-    //  }
-    //  if (!string) {
-    //   throw new TypeError("User input no puede ser una string vacio");
-    // }
-     if (!string) {
-      throw new TypeError("Not valid");
-     }
-     else if (string === 0) {
-      throw new TypeError("Not valid");
-     }
-     else if (string === (null, [])) {
-      throw new TypeError("Not valid");
-     }
-     else if (string === (0,0)) {
-      throw new TypeError("Not valid");
-     }
+  encode: function( offset, string){
+    let result = "";
+    // if (offset === null && string === []) {
+    //         throw new TypeError("Not valid");
+    //        }
+    // else if (offset === 0 && string === 0 ) {
+    //         throw new TypeError("Not valid");
+    //        }
+    if (offset == null) {
+      throw new TypeError ('Not Valid');
+    } else if (string == []) {
+      throw new TypeError ('Not Valid');
+    } else if (offset == 0) {
+      throw new TypeError ('Not Valid');
+    } 
+
+    for (let i=0; i<string.length; i++){
+        let string1 = string.charCodeAt(i);
+
+        if (string1 >=97 && string1 <=122){
+          result += String.fromCharCode((string1 - 97 + offset) %26 +97);
+        } else if (string1 >= 65 && string1 <=90){
+          result += String.fromCharCode((string1 - 65 + offset) %26 +65);       
+        } else {
+          result += string.charAt(i);
+        }                
+       }
+       return result;
+  },
+
+  decode: function ( offset, string){
+    let offset2 = 26 - (offset % 26);
+    let result = "";
     
-     const abc = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-     offset = (offset % 26 - 26) % 26;
-     return string.replace(/[A-Z]/ig, e=> abc[(abc.indexOf(e)-offset)%26]);
-   }  
+        // if (offset === null && string === []) {
+    //         throw new TypeError("Not valid");
+    //        }
+    // else if (offset === 0 && string === 0 ) {
+    //         throw new TypeError("Not valid");
+    //        }
+    if (offset == null) {
+      throw new TypeError ('Not Valid');
+    } else if (string == []) {
+      throw new TypeError ('Not Valid');
+    } else if (offset == 0) {
+      throw new TypeError ('Not Valid');
+    } 
+
+    for (let i = 0; i<string.length; i++){
+        let string1 = string.charCodeAt(i);
+
+        if (string1 >= 97 && string1 <=122){
+          result += String.fromCharCode((string1 - 97 + offset2) %26 +97);
+        } else if (string1 >= 65 && string1 <=90){
+          result += String.fromCharCode((string1 - 65 + offset2) %26 +65);       
+        } else {
+          result += string.charAt(i);
+        }                
+       }
+       return result;
+  },
 
 };
 

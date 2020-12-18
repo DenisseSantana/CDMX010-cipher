@@ -1,6 +1,6 @@
 import cipher from './cipher.js';
 
-console.log(cipher);
+// console.log(cipher);
 
 window.addEventListener("load", start, true);
 
@@ -11,21 +11,21 @@ function start(){
 //  }, true);
   // alert('Only English!')
 
-  document.getElementById('messageIn').addEventListener("keyup", function(){
-    let up = document.getElementById("messageIn");
-    up.value = up.value.toUpperCase();
-  }, true);
+  // document.getElementById('messageIn').addEventListener("keyup", function(){
+  //   let up = document.getElementById("messageIn");
+  //   up.value = up.value.toUpperCase();
+  // }, true);
 
   document.getElementById('forYou').addEventListener("click",function(){
     let string = document.getElementById('messageIn').value;
-    let offset = document.getElementById('offset').value;
-    document.getElementById('messageOut').value = cipher.encode(offset,string);
+    let offset = parseInt(document.getElementById('offset').value);
+    document.getElementById('messageOut').innerHTML = cipher.encode(offset,string);
   }, true);
 
   document.getElementById('toMe').addEventListener("click",function(){
     let string = document.getElementById('messageIn').value;
     let offset = document.getElementById('offset').value;
-    document.getElementById('messageOut').value = cipher.decode(offset,string);
+    document.getElementById('messageOut').innerHTML = cipher.decode(offset,string);
   }, true);
 }
 
